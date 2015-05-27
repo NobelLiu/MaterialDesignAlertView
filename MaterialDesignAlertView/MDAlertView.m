@@ -14,7 +14,7 @@
 @property(nonatomic,strong)UIView *backView,*shadowView,*darkerView;
 @property(nonatomic,strong)UIImageView *imageView;
 @property(nonatomic,strong)UILabel *titleLabel,*messageLabel;
-@property(nonatomic,strong)BFPaperButton *leftButton,*cancelButton,*confirmButton;
+@property(nonatomic,strong)BFPaperButton *cancelButton,*confirmButton;
 
 @end
 
@@ -41,8 +41,6 @@
         [self.backView addSubview:self.titleLabel];
         self.messageLabel = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.backView addSubview:self.messageLabel];
-        self.leftButton = [[BFPaperButton alloc]initWithFrame:CGRectZero];
-        [self.backView addSubview:self.leftButton];
         self.cancelButton = [[BFPaperButton alloc]initWithFrame:CGRectZero];
         self.cancelButton.isRaised = NO;
         [self.backView addSubview:self.cancelButton];
