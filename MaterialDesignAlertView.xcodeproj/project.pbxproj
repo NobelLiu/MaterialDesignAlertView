@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2B88B41B4686BB000E7511 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A2B88B31B4686BB000E7511 /* icon.png */; };
 		7A59759B1B15333200C7B022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A59759A1B15333200C7B022 /* main.m */; };
 		7A59759E1B15333200C7B022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A59759D1B15333200C7B022 /* AppDelegate.m */; };
 		7A5975A11B15333200C7B022 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5975A01B15333200C7B022 /* ViewController.m */; };
 		7A5975A41B15333200C7B022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A5975A21B15333200C7B022 /* Main.storyboard */; };
-		7A5975A61B15333200C7B022 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A5975A51B15333200C7B022 /* Images.xcassets */; };
 		7A5975A91B15333200C7B022 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5975A71B15333200C7B022 /* LaunchScreen.xib */; };
 		7A5975B51B15333300C7B022 /* MaterialDesignAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5975B41B15333300C7B022 /* MaterialDesignAlertViewTests.m */; };
 		7A5975BF1B15338600C7B022 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5975BE1B15338600C7B022 /* 1.png */; };
@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A2B88B31B4686BB000E7511 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		7A5975951B15333200C7B022 /* MaterialDesignAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialDesignAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5975991B15333200C7B022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A59759A1B15333200C7B022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		7A59759F1B15333200C7B022 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7A5975A01B15333200C7B022 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7A5975A31B15333200C7B022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7A5975A51B15333200C7B022 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7A5975A81B15333200C7B022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7A5975AE1B15333200C7B022 /* MaterialDesignAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialDesignAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5975B31B15333200C7B022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 				7A5975C61B1533B600C7B022 /* MDAlertView.m */,
 				7A5975C71B1533B600C7B022 /* UIColor+BFPaperColors.h */,
 				7A5975C81B1533B600C7B022 /* UIColor+BFPaperColors.m */,
+				7A2B88B31B4686BB000E7511 /* icon.png */,
 				7A5975A21B15333200C7B022 /* Main.storyboard */,
-				7A5975A51B15333200C7B022 /* Images.xcassets */,
 				7A5975A71B15333200C7B022 /* LaunchScreen.xib */,
 				7A5975981B15333200C7B022 /* Supporting Files */,
 			);
@@ -221,10 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A5975A41B15333200C7B022 /* Main.storyboard in Resources */,
+				7A2B88B41B4686BB000E7511 /* icon.png in Resources */,
 				7A5975BF1B15338600C7B022 /* 1.png in Resources */,
 				7A5975C11B15338E00C7B022 /* 2.png in Resources */,
 				7A5975A91B15333200C7B022 /* LaunchScreen.xib in Resources */,
-				7A5975A61B15333200C7B022 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +444,7 @@
 				7A5975BA1B15333300C7B022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A5975BB1B15333300C7B022 /* Build configuration list for PBXNativeTarget "MaterialDesignAlertViewTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +453,7 @@
 				7A5975BD1B15333300C7B022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

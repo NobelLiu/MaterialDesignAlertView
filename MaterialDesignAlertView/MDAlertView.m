@@ -8,6 +8,7 @@
 
 #import "MDAlertView.h"
 #import "BFPaperButton.h"
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 @interface MDAlertView ()
 
@@ -212,12 +213,10 @@
     self.shadowView.frame = self.frame;
     [vc.view addSubview:self];
     [self.backView setTransform:CGAffineTransformMakeScale(0.995, 0.985)];
-//    CATransform3D t = CATransform3DIdentity;
-//    t.m13 = 0.0005;
-//    t.m33 = 0.0005;
-//    t.m41 = 0.0001;
-//    self.backView.layer.transform = t;
-    self.backView.center = CGPointMake(vc.view.frame.size.width / 2, vc.view.frame.size.height / 2 - 3);
+    self.backView.center = CGPointMake(vc.view.frame.size.width / 2, vc.view.frame.size.height / 2 - 4);
+    if (IS_IPAD) {
+        self.backView.center = CGPointMake(vc.view.frame.size.width / 2, vc.view.frame.size.height / 2 - 7);
+    }
     [UIView animateWithDuration:0.2 animations:^{
         [self.backView setTransform:CGAffineTransformMakeScale(1, 1)];
 //        self.backView.layer.transform = CATransform3DIdentity;
@@ -232,10 +231,19 @@
     [UIView animateWithDuration:0.2 animations:^{
         self.shadowView.alpha = 0;
         self.backView.alpha = 0;
-        self.backView.center = CGPointMake(vc.view.frame.size.width / 2, vc.view.frame.size.height / 2 - 3);
+        self.backView.center = CGPointMake(vc.view.frame.size.width / 2, vc.view.frame.size.height / 2 - 4);
+        if (IS_IPAD) {
+            self.backView.center = CGPointMake(vc.view.frame.size.width / 2, vc.view.frame.size.height / 2 - 7);
+        }
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
     }];
+}
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    UIViewController *vc = self.delegate;
+    self.frame = vc.view.bounds;
 }
 
 @end
